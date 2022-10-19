@@ -1,0 +1,297 @@
+/* Importación de tipos de fuente */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+body{
+    height: 100vh;
+}
+
+/* Buscador y registrar */
+.contenedor-clientes{
+    background-color: rgb(241, 241, 241);
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.contenedor-buscador-registrar{
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+.contenedor-buscador{
+    width: 100%;
+    background-color: rgb(199, 199, 199);
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    padding: 0 12px 0 5px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+}
+.contenedor-buscador input{
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    background-color: rgb(199, 199, 199);
+    padding: 5px 10px;
+    border-right-style: solid;
+    border-right-color: rgb(63, 63, 63);
+    margin: 10px;
+}
+.contenedor-buscador input::placeholder{
+    font-size: 1rem;
+    font-weight: 500;
+    color: rgb(63, 63, 63);
+}
+
+/* Eliminar la x del input */
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration { display: none; }
+
+
+/* Estilos del boton de registrarme */
+.contenedor-registrar{
+    width: 20%;
+}
+.contenedor-registrar button{
+    margin-left: 13px;
+    padding: 12px;
+    border: 3px solid black;
+    font-size: 1rem;
+    font-weight: 600;
+    background-color: rgb(255, 255, 1);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    -webkit-box-shadow: 0px 0px 16px -4px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 16px -4px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 16px -4px rgba(0,0,0,0.75);
+    transition: 0.7s;
+    -webkit-transition: 0.7s;
+    -moz-transition: 0.7s;
+    -ms-transition: 0.7s;
+    -o-transition: 0.7s;
+}
+.contenedor-registrar button:hover{
+    cursor: pointer;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 1);
+    border: 3px solid rgb(255, 255, 1);
+    transition: 0.7s;
+    -webkit-transition: 0.7s;
+    -moz-transition: 0.7s;
+    -ms-transition: 0.7s;
+    -o-transition: 0.7s;
+}
+
+/* Tarjeta de los clientes */
+
+.contenedor-listado-clientes{
+    display: flex;
+    flex-direction: column;
+    padding: 30px 0;
+}
+/* Contenedor de la tarjeta individual */
+.tarjeta-empresa{
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    overflow: hidden;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    border: 3px solid rgb(199, 199, 199);
+    max-width: 100%;
+    padding-right: 20px;
+    margin: 5px 0;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+}
+.tarjeta-empresa:hover{
+    box-shadow: rgba(34, 34, 34, 0.302) 0px 10px 40px;
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+}
+/* Estilos de la imagen */
+.tarjeta-imagen{
+    width: 100%;
+    max-width: 160px;
+    height: 100%;
+    padding: 10px;
+    overflow: hidden;
+}
+.tarjeta-imagen img{
+    display:block;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+/* Estilos de los detalles*/
+.tarjeta-detalles{
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+    padding-left: 10px;
+    justify-content: space-between;
+    align-self: normal;
+    width: 100%;
+    max-width: 400px;
+}
+.contenedor-texto{
+    align-self: end;
+}
+.contenedor-texto h2{
+    font-size: 1.6rem;
+    padding-left: 10px;
+    font-family: 'Poppins', sans-serif;
+}
+.contenedor-texto p{
+    font-size: 1rem;
+    padding-left: 10px;
+    font-weight: 300;
+    font-family: 'Poppins', sans-serif;
+}
+.separador-hr{
+    display: none;
+}
+.contenedor-location{
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(40, 40, 40);
+}
+
+/* Estilos de información de contacto */
+.tarjeta-contacto{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 200px;
+    align-self: flex-end;
+    margin-left: 10px;
+    margin-bottom: 5px;
+}
+.contacto{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.contacto img{
+    margin-right: 8px;
+}
+.contacto p{
+    color: rgb(40, 40, 40);
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Responsive */
+@media only screen and (min-width: 200px) and (max-width: 800px) {
+	body{
+        background-color: red;
+    }
+    .contenedor-buscador-registrar{
+        width: 100%;
+    }
+    .contenedor-buscador{
+        width: 40%;
+    }
+    .contenedor-registrar{
+        width: 20%;
+    }
+    .contenedor-buscador-registrar {
+        width: 88%;
+        justify-content: center;
+    }
+
+    /* Tarjeta responsive */
+    .tarjeta-imagen{
+        display: none;
+    }
+    .tarjeta-empresa{
+        flex-direction: column;
+        max-width: 400px;
+        padding-right: 0;
+        margin: 5px;
+    }
+    .tarjeta-detalles{
+        padding: 0;
+        padding: 10px 0 0 0;
+    }
+    .contenedor-texto{
+        margin-bottom: 10px;
+    }
+    .contenedor-location{
+        margin-top: 5px;
+    }
+    .separador-hr{
+        display: block;
+        width: 97%;
+        align-self: center;
+        border: 0.7px solid rgb(199, 199, 199);
+        background-color:rgb(199, 199, 199);
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+}
+    .tarjeta-contacto{
+        max-width: 100%;
+        padding-left: 10px;
+        padding-bottom: 0;
+    }
+    .contenedor-texto p, .contenedor-texto h2{
+        padding-left: 10px;
+    }
+    .ultimo-contacto{
+        margin-bottom: 0;
+        padding-bottom: 10px;
+    }
+}
+@media only screen and (min-width: 490px) and (max-width: 600px) {
+    body{
+        background-color: blue;
+    }
+    .contenedor-buscador{
+        width: 54%;
+    }
+    .contenedor-registrar{
+        width: 26%;
+    }
+}
+@media only screen and (min-width: 200px) and (max-width: 490px) {
+    body{
+        background-color: blue;
+    }
+    .contenedor-buscador{
+        width: 84%;
+    }
+    .contenedor-registrar{
+        width: 58%;
+    }
+}
